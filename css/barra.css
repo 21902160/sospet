@@ -1,0 +1,24 @@
+/* Estilização da barra de rolagem */
+.area-de-rolagem::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+}
+
+/* Estilização do polegar (a parte arrastável da barra de rolagem) */
+.area-de-rolagem::-webkit-scrollbar-thumb {
+    background-color: #C2CC47;
+    border-radius: 4px;
+}
+
+/* Estilização da barra de rolagem no Firefox */
+.area-de-rolagem {
+    scrollbar-width: thin;
+    scrollbar-color: #C2CC47 transparent;
+}
+
+/* Estilização do polegar no Firefox */
+.area-de-rolagem::-moz-scrollbar-thumb {
+    background-color: #C2CC47;
+    border-radius: 4px;
+}
