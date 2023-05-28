@@ -1,0 +1,128 @@
+/* Importa a fonte do projeto */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+/* Formatação global */
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+b {
+    color: #C2CC47;
+}
+
+.grid-table {
+    display: grid;
+    grid-template-rows: 0.3fr 1fr 0.2fr;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    min-height: 100vh;
+    text-align: -webkit-center;
+}
+
+.title {
+    font-size: 80px;
+    text-align: center;
+}
+
+table {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+th {
+    background-color: #C2CC47;
+    color: #fff;
+}
+
+th,
+td {
+    padding: .8rem;
+    font-size: 1.4rem;
+    vertical-align: middle;
+}
+
+tbody {
+    background-color: #eee;
+    color: #555;
+}
+
+img:hover {
+    transform: scale(1.2);
+    transition: transform .4s;
+}
+
+.botao {
+    text-align: center;
+}
+
+.btn-custom-dois {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-left: 15px;
+    font-size: 20px;
+    background-color: #C2CC47;
+}
+
+#btn-enviar2 {
+    width: 30vw;
+    height: 6vh;
+}
+
+#btn-enviar2:hover {
+    background-color: white;
+    transition: .4s;
+    color: #C2CC47;
+}
+
+@media screen and (max-width: 600px) {
+
+    .grid-table {
+        display: grid;
+        grid-template-rows: 0.2fr 1fr 0.1fr;
+        align-items: center;
+        position: relative;
+        text-align: center;
+        min-height: 100vh;
+        text-align: -webkit-center;
+    }
+
+    thead {
+        display: none;
+    }
+
+    td {
+        display: block;
+    }
+
+    td:first-child {
+        background-color: #C2CC47;
+        color: #fff;
+        text-align: center;
+    }
+
+    td:nth-child(2)::before {
+        content: "Data";
+    }
+
+    td:nth-child(3)::before {
+        content: "Horário";
+    }
+
+    td:nth-child(4)::before {
+        content: "Link";
+
+    }
+
+    td {
+        text-align: right;
+    }
+
+    td::before {
+        float: left;
+        margin-right: 3rem;
+        font-weight: bold;
+    }
+}
