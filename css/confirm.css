@@ -1,0 +1,97 @@
+/* Importa a fonte do projeto */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+/* Formatação global */
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+b {
+    color: #C2CC47;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.grid-confirm {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    align-items: center;
+    position: relative;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.title {
+    font-size: 50px;
+    text-align: start;
+}
+
+.texto {
+    font-size: 30px;
+    text-align: start;
+}
+
+.grid-content {
+    display: grid;
+    grid-template-rows: 1fr 1fr 0.5fr 0.5fr;
+    min-height: 50vh;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    gap: 25px;
+    padding: 50px;
+}
+
+.btn-voltar {
+    width: 100%;
+    height: 50px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+    background-color: white;
+    border: none;
+    color: #C2CC47;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-voltar:hover {
+    background-color: #C2CC47;
+    color: white;
+    transition: .4s;
+}
+
+.btn-eventos {
+    width: 100%;
+    height: 50px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+    background-color: #C2CC47;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-eventos:hover {
+    background-color: white;
+    color: #C2CC47;
+    transition: .4s;
+}
+
+@media screen and (max-width: 1300px) {
+
+    .grid-content {
+        display: grid;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+        min-height: 50vh;
+        align-items: center;
+        position: relative;
+        text-align: center;
+        gap: 10px;
+        padding: 50px;
+    }
+
+}
