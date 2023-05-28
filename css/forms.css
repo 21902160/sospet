@@ -1,0 +1,169 @@
+/* Importa a fonte do projeto */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+/* Formatação global */
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+b {
+    color: #C2CC47;
+}
+
+.grid-formulario {
+    display: grid;
+    grid-template-rows: 0.5fr 1fr;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+input:focus {
+    outline: none;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 80px;
+}
+
+.formulario {
+    display: grid;
+    grid-template-rows: repeat(5, 0.5fr);
+    align-items: center;
+    position: relative;
+    gap: 20px;
+}
+
+.form-posicao {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    align-items: center;
+    position: relative;
+    text-align: center;
+    gap: 20px;
+}
+
+#nome {
+    text-align: end;
+}
+
+#sobrenome {
+    text-align: start;
+}
+
+#email {
+    text-align: center;
+}
+
+#input-nome {
+    width: 25vw;
+    height: 6vh;
+}
+
+#input-sobrenome {
+    width: 25vw;
+    height: 6vh;
+}
+
+#input-email {
+    width: 52.5vw;
+    height: 6vh;
+}
+
+.botao {
+    text-align: center;
+}
+
+#btn-enviar,
+#btn-enviar2 {
+    width: 53.5vw;
+    height: 6vh;
+}
+
+#btn-enviar:hover {
+    background-color: white;
+    transition: .4s;
+    color: #C2CC47;
+}
+
+#btn-enviar2:hover {
+    background-color: #C2CC47;
+    transition: .4s;
+    color: white;
+}
+
+.footer {
+    background-image: url(../images/form_footer_bg.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 320px;
+    position: relative;
+    align-self: end;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: 1fr 55px;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 671.20px) {
+
+    .titulo {
+        text-align: center;
+        font-size: 50px;
+    }
+
+    #nome {
+        text-align: center;
+    }
+
+    #sobrenome {
+        text-align: center;
+    }
+
+    #input-nome {
+        width: 51.5vw;
+        height: 6vh;
+    }
+
+    #input-sobrenome {
+        width: 51.5vw;
+        height: 6vh;
+    }
+
+}
+
+input {
+    font-family: 'Nunito', sans-serif;
+    color: #C2CC47;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+.btn-custom-um {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-left: 15px;
+    font-size: 20px;
+    background-color: #C2CC47;
+}
+
+.btn-custom-dois {
+    font-family: 'Nunito', sans-serif;
+    color: #C2CC47;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-left: 15px;
+    font-size: 20px;
+    background-color: white;
+}
