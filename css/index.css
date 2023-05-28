@@ -1,0 +1,443 @@
+/* Importa a fonte do projeto */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+/* Formatação global */
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+b {
+    color: #C2CC47;
+}
+
+@media (max-width: 925px) {
+    .esconde {
+        display: none;
+    }
+}
+
+/* Foramatação geral da primeira seção */
+.grid-secao-um {
+    display: grid;
+    grid-template-rows: repeat(3, 0.5fr);
+    grid-template-areas:
+        "cabecalho"
+        "texto"
+        "botoes";
+    align-items: center;
+    background-image: url(../images/header_bg.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+header {
+    background-color: rgba(102, 102, 102, 0.4);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    grid-area: cabecalho;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "logo links";
+    align-items: center;
+    align-self: baseline;
+}
+
+.logo {
+    grid-area: logo;
+    text-align: center;
+}
+
+.logo img {
+    width: 150px;
+    height: 150px;
+}
+
+.links {
+    grid-area: links;
+    text-align: center;
+}
+
+.links a {
+    margin: 25px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+
+.links a:hover {
+    transition: .4s;
+    color: #C2CC47;
+}
+
+.links #btn-contato {
+    background-color: #C2CC47;
+    padding: 1vh 3vw;
+    border-radius: 20px;
+}
+
+.links #btn-contato:hover {
+    background-color: white;
+    transition: .4s;
+    color: #C2CC47;
+}
+
+.texto-secao-um {
+    grid-area: texto;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.texto-secao-um h1 {
+    font-size: 50px;
+}
+
+.texto-secao-um h2 {
+    font-size: 75px;
+}
+
+.botoes-secao-um {
+    grid-area: botoes;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    grid-template-areas:
+        "btn1"
+        "btn2";
+    gap: 25px;
+}
+
+.botao-um {
+    grid-area: btn1;
+}
+
+.botao-um a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    background-color: #C2CC47;
+    font-size: 4vh;
+    padding: 1vh 3vw;
+    margin-top: 10vh;
+    text-decoration: none;
+}
+
+.botao-um:hover {
+    transform: scale(1.2);
+    transition: transform .4s;
+}
+
+.botao-um img {
+    margin-right: 2vw;
+    width: 8vh;
+    height: 8vh;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.botao-dois {
+    grid-area: btn2;
+}
+
+.botao-dois img {
+    width: 80px;
+    height: 80px;
+}
+
+.botao-dois:hover {
+    transform: scale(1.1);
+    transition: transform .4s;
+}
+
+/* Formatação geral da segunda seção */
+
+.grid-secao-dois {
+    display: grid;
+    grid-template-rows: 0.5fr 1fr;
+    min-height: 100vh;
+    position: relative;
+    align-items: center;
+}
+
+.secao-dois-titulo {
+    text-align: center;
+    font-size: 80px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.grid-servicos-sobre {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    position: relative;
+    align-items: center;
+    gap: 30px;
+}
+
+.servicos {
+    display: grid;
+    grid-template-rows: repeat(4, 0.2fr);
+    position: relative;
+    align-items: center;
+    gap: 25px;
+    padding: 50px;
+}
+
+.servicos img {
+    width: 60px;
+    height: 60px;
+}
+
+.lista {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+    align-items: center;
+    color: #C2CC47;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    font-size: 25px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 1fr;
+    gap: 15px;
+}
+
+.lista:hover {
+    transform: scale(1.1);
+    transition: transform .4s;
+}
+
+.sobre {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    position: relative;
+    align-items: center;
+    gap: 15px;
+    padding: 50px;
+}
+
+.sobre p {
+    font-size: 25px;
+}
+
+/* Formatação geral da terceira seção */
+
+.grid-secao-tres {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(320px, 1fr));
+    min-height: 100vh;
+    position: relative;
+    align-items: center;
+}
+
+.secao-tres-titulo {
+    text-align: center;
+    font-size: 80px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    align-items: center;
+    position: relative;
+    gap: 50px;
+    margin: 25px;
+}
+
+.imagem-animal {
+    text-align: center;
+}
+
+.imagem-animal img {
+    width: 40vh;
+    height: 50vh;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.texto-animais {
+    display: grid;
+    grid-template-rows: repeat(2, 0.5fr);
+    gap: 25px;
+}
+
+.caracteristicas {
+    font-size: 30px;
+}
+
+.historia {
+    font-size: 25px;
+}
+
+.caracteristicas-end {
+    font-size: 30px;
+    text-align: end;
+}
+
+.historia-end {
+    font-size: 25px;
+    text-align: end;
+}
+
+@media screen and (max-width: 1300px) {
+
+    .reverse {
+        order: 2;
+    }
+
+    .reverse:last-child {
+        order: 1;
+    }
+
+    .texto-secao-um h1 {
+        font-size: 40px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .texto-secao-um h2 {
+        font-size: 55px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .grid-secao-dois {
+        display: grid;
+        grid-template-rows: 0.2fr 1fr;
+        min-height: 100vh;
+        position: relative;
+        align-items: center;
+    }
+
+    .secao-dois-titulo {
+        text-align: center;
+        font-size: 50px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .secao-tres-titulo {
+        text-align: center;
+        font-size: 50px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .grid-secao-tres {
+        display: grid;
+        grid-template-rows: 0.2fr repeat(4, 1fr);
+        min-height: 100vh;
+        position: relative;
+        align-items: center;
+    }
+
+    .caracteristicas-end {
+        font-size: 30px;
+        text-align: start;
+    }
+
+    .historia-end {
+        font-size: 25px;
+        text-align: start;
+    }
+
+}
+
+/* Formatação geral da quarta seção */
+
+.grid-secao-quatro footer {
+    display: grid;
+    grid-template-rows: 1fr 0.2fr;
+    align-items: center;
+    position: relative;
+    background-color: #C2CC47;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.div-footer-um {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    align-items: center;
+    position: relative;
+}
+
+.footer-logo {
+    width: 150px;
+    height: 150px;
+}
+
+.footer-contato {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    position: relative;
+    text-align: end;
+}
+
+.footer-contato p {
+    color: white;
+}
+
+.rede-icons img {
+    width: 25px;
+    height: 25px;
+}
+
+.copy {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 1300px) {
+
+    .grid-secao-quatro footer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        background-color: #C2CC47;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 0px;
+        padding-right: 0px;
+        gap: 15px;
+    }
+
+    .div-footer-um {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        align-items: center;
+        position: relative;
+        gap: 15px;
+    }
+
+    .footer-contato {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        position: relative;
+        justify-self: center;
+        text-align: center;
+    }
+
+    .footer-logo {
+        width: 150px;
+        height: 150px;
+        justify-self: center;
+    }
+
+}
