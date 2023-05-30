@@ -399,6 +399,11 @@ header {
     height: 25px;
 }
 
+.rede-icons img:hover {
+    transform: scale(1.1);
+    transition: transform .4s;
+}
+
 .copy {
     text-align: center;
     color: white;
